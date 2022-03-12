@@ -5,25 +5,25 @@
     --text-gray: #4a4a4a;
     --color-primary: #4D41C0;
     --white: #fff;
-    --text-light-gray:#aaa;
-    --star-yellow:#FFBB3A;
- } 
+    --text-light-gray: #aaa;
+    --star-yellow: #FFBB3A;
+}
 
-*{
+* {
     margin: 0;
-    box-sizing: border-box ;
-    font-family: 'Open Sans' , sans-serif;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    margin:0;
+    margin: 0;
 }
 
- html , body { 
-        background-color: var(--bg-gray);
-    }
+html, body {
+    background-color: var(--bg-gray);
+}
 
-header{
+header {
     background-color: var(--color-primary);
     color: var(--white);
     height: 60px;
@@ -31,12 +31,14 @@ header{
     align-items: center;
     ;
 }
-nav{ 
+
+nav {
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: space-between;
 }
-nav h1{
+
+nav h1 {
     font-size: 24px;
     font-weight: 700;
 }
@@ -45,12 +47,13 @@ nav a {
     font-size: 12px;
     font-weight: 400;
 }
-a, a:hover{
+
+a, a:hover {
     text-decoration: none;
-    color:unset;
+    color: unset;
 }
 
-.dsmovie-contact-container{
+.dsmovie-contact-container {
     display: flex;
     align-items: center;
 }
@@ -60,26 +63,29 @@ a, a:hover{
 
 }
 
-#dsmovie-card-list{
-    padding: 40px 10px;
+#dsmovie-card-list {
+    padding: 0 10px;
 }
-.dsmovie-card{
+
+.dsmovie-card {
     width: 100%;
-   
+
 }
+
 .dsmovie-card img {
     width: 100%;
     border-radius: 8px 8px 0 0;
 }
+
 .dsmovie-card-description {
-background-color: var(--white);
-padding: 10px 20px 20px 20px;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-between;
-border-radius: 0 0 8px 8px;
-height: 200px;
+    background-color: var(--white);
+    padding: 10px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 0 0 8px 8px;
+    height: 200px;
 
 }
 
@@ -93,9 +99,9 @@ height: 200px;
 }
 
 .dsmovie-card-description-bottom h4 {
-font-size: 16px;
-font-weight: 700;
-color: var(--star-yellow);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--star-yellow);
 
 }
 
@@ -105,15 +111,17 @@ color: var(--star-yellow);
     align-items: center;
 }
 
-.dsmovie-card-description-bottom img{
+.dsmovie-card-description-bottom img {
     width: 22px;
 }
+
 .dsmovie-card-description-bottom p {
     font-size: 12px;
-font-weight: 400;
+    font-weight: 400;
     color: var(--text-light-gray);
     margin-bottom: 10px;
 }
+
 .dsmovie-btn, .dsmovie-btn:hover {
     width: 180px;
     height: 40px;
@@ -127,11 +135,13 @@ font-weight: 400;
     border-radius: 4px;
     border: 0;
 }
-.dsmovie-form-container{
-padding: 40px 0;
-max-width: 480px;
+
+.dsmovie-form-container {
+    padding: 40px 0;
+    max-width: 480px;
 }
-.dsmovie-form-description{
+
+.dsmovie-form-description {
     background-color: var(--white);
     padding: 20px;
     display: flex;
@@ -141,17 +151,19 @@ max-width: 480px;
 
 
 }
-.dsmovie-form{
-width: 100%;
+
+.dsmovie-form {
+    width: 100%;
 
 }
-.dsmovie-form-description h3{
-font-size: 13px;
-font-weight: 700;
-margin-bottom: 20px
+
+.dsmovie-form-description h3 {
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 20px
 }
 
-.dsmovie-form-group{
+.dsmovie-form-group {
     margin-bottom: 20px;
 
 
@@ -163,12 +175,63 @@ margin-bottom: 20px
     color: var(--text-light-gray);
 }
 
-.dsmovie-form-btn-container{
-height: 100px;
+.dsmovie-form-btn-container {
+    height: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 
+
+}
+
+.dsmovie-pagination-container {
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.dsmovie-pagination-box {
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dsmovie-pagination-box p {
+    margin: 0;
+    font-size: 12px;
+    color: var(--color-primary);
+    font-weight: 400;
+}
+
+.dsmovie-pagination-box button {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--color-primary);
+    border-radius: 4px;
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dsmovie-pagination-box button img {
+    filter: invert(23%) sepia(81%) saturate(100%) hue-rotate(237deg) brightness(0%) contrast(88%);
+
+}
+
+.dsmovie-pagination-box button:disabled {
+    border: 1px solid var(--text-light-gray);
+
+}
+
+.dsmovie-flip-horizontal {
+    transform: rotate(180deg);
+}
+
+.dsmovie-pagination-box button:disabled img {
+    filter: unset;
 
 }
